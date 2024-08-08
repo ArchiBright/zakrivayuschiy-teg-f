@@ -18,17 +18,87 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-inter);
+  font-weight: var(--font-weight);
+  background-color: var(--background-color);
+  color: var(--accent-color);
 }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: var(--font-press-start);
+  gap: 20px;
+}
+
+.header__title-html {
+  font-size: 65px;
+  line-height: 65px;
+}
+
+.header__title {
+  margin-bottom: 5px;
+}
+
+
+.theme-menu__button {
+  background-color: transparent;
+  text-transform: uppercase;
+  border: none;
+}
+
+
 
 .card {
   display: flex;
   flex-direction: column;
+  border: 2px solid var(--accent-color);
+  gap: 25px;
+  margin: 50px;
+}
+
+.card__title {
+  font-size: 18px;
+  border-bottom: 2px solid var(--accent-color);
+  line-height: 21.78px;
+  font-weight: 785;
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .card__text {
-  margin: 25px 25px 27px;
+  margin: 0 25px;
+  font-size: 18px;
+  font-weight: var(--font-weight);
+  line-height: 21px;
 }
 
 .card__footnote {
-  margin: 0px 25px 27px;
+  margin: 0px 25px;
+  font-size: 18px;
+  font-weight: var(--font-weight);
+  line-height: 21px;
+}
+
+.card__like-place {
+  display: flex;
+  justify-self: center;
+  align-self: flex-end;
+  margin: 0 25px 25px;
+}
+
+.card__like-button {
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+  font-family: var(--font-press-start);
+  font-size: 14px;
+  font-weight: 400px;
+  width: 130px;
+  height: 38px;
 }
