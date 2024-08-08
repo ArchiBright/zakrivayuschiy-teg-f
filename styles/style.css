@@ -24,3 +24,11 @@
   display: flex;
   flex-direction: column;
 }
+
+.card__text {
+  margin: 25px 25px 27px;
+}
+
+.card__footnote {
+  margin: 0px 25px 27px;
+}
