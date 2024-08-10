@@ -9,7 +9,7 @@
   --background-color: #1A1B22;
   --accent-color: #00CC14;
   --font-weight: 465;
-  --background-image: url('../svg/background-theme-dark.svg');
+  --background-image: linear-gradient(transparent 60%, rgba(211, 211, 211, 1));
 }
 
 :root.theme-light {
