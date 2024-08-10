@@ -27,6 +27,7 @@
   display: flex;
   flex-direction: column;
   background-image: var(--background-image);
+  background-size: 2px 2px;
 }
 
 .header {
@@ -40,6 +41,7 @@
   border: 2px solid var(--accent-color);
   padding: 25px;
   width: clamp(20.833rem, 0rem + 100vi, 38.889rem);
+
 }
 
 .header__title-html {

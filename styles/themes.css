@@ -9,7 +9,10 @@
   --background-color: #1A1B22;
   --accent-color: #00CC14;
   --font-weight: 465;
-  --background-image: linear-gradient(transparent 60%, rgba(211, 211, 211, 1));
+  --background-image: 
+  linear-gradient(0deg, transparent 50%, rgba(211, 211, 211, 1) 60%),
+  linear-gradient(90deg, transparent 50%, rgba(211, 211, 211, 1) 60%);
+  /* linear-gradient(180deg, #e7e7e7, #1a1a1a); */
 }
 
 :root.theme-light {
