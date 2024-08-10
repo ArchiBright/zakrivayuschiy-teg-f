@@ -9,12 +9,12 @@
   --background-color: #1A1B22;
   --accent-color: #00CC14;
   --font-weight: 465;
-  --background-image: url('../svg/background.svg');
+  --background-image: url('../svg/background-theme-dark.svg');
 }
 
 :root.theme-light {
   --background-color: #FFFFFF;
   --accent-color: #000000;
   --font-weight: 400;
-  --background-image: url('../svg/background.svg');
+  --background-image: url('../svg/background-theme-light.svg');
 }
