@@ -67,6 +67,19 @@
   border: none;
 }
 
+.theme-menu__button:hover {
+  animation: button 0.5s ease;
+}
+
+@keyframes button {
+0% {
+  opacity: 1;
+}
+100% {
+  opacity: 0.6;
+}
+}
+
 
 
 .card {
