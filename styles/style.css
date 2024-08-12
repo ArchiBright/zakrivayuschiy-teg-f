@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: column;
   background-image: var(--background-image);
-  background-size: 2px 2px;
+  background-size: cover;
 }
 
 .header {
@@ -41,6 +41,7 @@
   border: 2px solid var(--accent-color);
   padding: 25px;
   width: clamp(20.833rem, 0rem + 100vi, 38.889rem);
+  background-color: var(--background-color);
 
 }
 
@@ -75,6 +76,7 @@
   gap: 25px;
   margin: 50px auto;
   width: clamp(20.833rem, 0rem + 100vi, 38.889rem);
+  background-color: var(--background-color);
 }
 
 .card__title {
