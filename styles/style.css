@@ -83,6 +83,25 @@
   transition: transform 0.3s ease;
 }
 
+.theme-menu__button:disabled::before {
+  content: '▶';
+  position: absolute;
+  bottom: 0;
+  left: -15px;
+  font-size: 16px;
+  color: var(--accent-color);
+  animation: arrow 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(4px);
+  }
+}
+
 .theme-menu__button:focus {
   outline: none;
   opacity: 0.6;
@@ -102,14 +121,6 @@
   opacity: 0.6;
 }
 
-/* @keyframes button {
-0% {
-  opacity: 1;
-}
-100% {
-  opacity: 0.6;
-}
-} */
 
 
 
