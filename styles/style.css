@@ -30,6 +30,7 @@
   background-size: cover;
 }
 
+
 .header {
   display: flex;
   flex-direction: column;
@@ -177,6 +178,12 @@
   font-weight: 400px;
   width: 130px;
   height: 38px;
+}
+
+.card__like-button:focus {
+  outline: none;
+  transition: box-shadow 0.3s ease;  
+  box-shadow: 2px 2px 0 var(--accent-color);
 }
 
 
