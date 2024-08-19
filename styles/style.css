@@ -163,6 +163,23 @@
   line-height: 21px;
 }
 
+.card__like-icon {
+  display: flex;
+  justify-self: center;
+  align-self: flex-end;
+  margin: 0 12px;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.card__like-icon:focus {
+  outline: none;
+}
+
+.card__like-icon:focus-visible {
+  border: 2px solid var(--accent-color);
+}
+
 .card__like-place {
   display: flex;
   justify-self: center;
@@ -185,7 +202,6 @@
   position: relative;
   z-index: 1;
   color: var(--text-color);
-  /* transform: translate(-50%, -50%); */
   mix-blend-mode: difference;
 }
 
