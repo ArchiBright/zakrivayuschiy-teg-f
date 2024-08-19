@@ -319,8 +319,48 @@
   font-family: var(--font-press-start);
   font-size: 14px;
   font-weight: 400px;
+  background-color: var(--background-color);
 }
 
+.floppy-dialog {
+  /* display: none; */
+  position: fixed;
+  border: 2px solid var(--accent-color);
+  top: 50%;
+  left: 50%;
+  width: 90vh;
+  height: 191px;
+  background-color: var(--background-color);
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+}
+
+.floppy-dialog__header {
+  font-family: var(--font-press-start);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: var(--accent-color);
+}
+
+.floppy-dialog__button {
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+  font-family: var(--font-press-start);
+  font-size: 14px;
+  font-weight: 400px;
+  width: 130px;
+  height: 38px;
+  color: var(--accent-color);
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 @media (prefered-color-scheme: theme-dark) {
   .header {
