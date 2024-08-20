@@ -314,7 +314,6 @@
 }
 
 .footer__button {
-  background-color: transparent;
   border: 2px solid var(--accent-color);
   font-family: var(--font-press-start);
   font-size: 14px;
@@ -322,18 +321,18 @@
   background-color: var(--background-color);
 }
 
-.floppy-dialog {
-  /* display: none; */
+
+#floppy-dialog {
   position: fixed;
   border: 2px solid var(--accent-color);
-  top: 50%;
-  left: 50%;
-  width: 90vh;
+  width: 353px;
   height: 191px;
   background-color: var(--background-color);
   z-index: 100;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
   padding: 30px;
   gap: 30px;
 }
@@ -349,6 +348,7 @@
 
 .floppy-dialog__button {
   background-color: transparent;
+  text-transform: uppercase;
   border: 2px solid var(--accent-color);
   font-family: var(--font-press-start);
   font-size: 14px;
@@ -362,8 +362,3 @@ dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-@media (prefered-color-scheme: theme-dark) {
-  .header {
-    /* background-color: dark; */
-  }
-}
