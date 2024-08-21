@@ -123,7 +123,37 @@
 }
 
 
+/* .img-prepare {
+  filter: brightness(120%);
+}
 
+.img-clean-sheet {
+  filter: brightness(120%);
+}
+
+.img-if-fail {
+  filter: brightness(120%);
+}
+
+.img-chase-the-ideal {
+  filter: brightness(120%);
+}
+
+.img-about-close {
+  filter: brightness(120%);
+}
+
+.img-strategies {
+  filter: brightness(120%);
+}
+
+.img-surrender {
+  filter: brightness(120%);
+}
+
+.img-imhere {
+  filter: brightness(120%);
+} */
 
 .card {
   display: flex;
