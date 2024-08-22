@@ -122,6 +122,11 @@
   opacity: 0.6;
 }
 
+#floppy {
+  mix-blend-mode: difference;
+  color: var(--button-text-color, rgba(255, 255, 255, 1));
+}
+
 
 /* .img-prepare {
   filter: brightness(120%);
