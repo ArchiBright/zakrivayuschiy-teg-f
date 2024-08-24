@@ -321,6 +321,8 @@
   font-size: 14px;
   font-weight: 400px;
   background-color: var(--background-color);
+  display: flex;
+  gap: 10px;
 }
 
 
