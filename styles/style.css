@@ -47,6 +47,7 @@
 }
 
 .header__title-html {
+  margin-top: 15%;
   font-size: 65px;
   line-height: 65px;
 }
@@ -145,11 +146,40 @@
   margin-bottom: -25px;
 }
 
+.image-label {
+  position: relative;
+  display: inline-block;
+}
+
 .card__image {
+  display: block;
   width: 100%;
   height: auto;
   border-bottom: 2px solid var(--accent-color);
 }
+
+.card-label {
+  position: absolute;
+  height: 14px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  top: 25px;
+  right: 25px;
+  font-family: var(--font-press-start);
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+  white-space: nowrap;
+  text-shadow: -1px -1px 0 var(--label-border-color), 1px -1px 0 var(--label-border-color), -1px 1px 0 var(--label-border-color), 1px 1px 0 var(--label-border-color);
+}
+
+/* @supports ((text-stroke: 1px var(--label-border-color)) or (-webkit-text-stroke: 1px var(--label-border-color))) {
+  .card-label {
+      -webkit-text-stroke: 1px var(--label-border-color);
+      text-stroke: 1px var(--label-border-color);
+      text-shadow: none;
+    }
+} */
 
 .card__text {
   margin: 0 25px;
@@ -322,22 +352,25 @@
   font-weight: 400px;
   background-color: var(--background-color);
   display: flex;
-  gap: 10px;
+  gap: 8px;
+  padding: 0.8rem;
+  align-items: center;
 }
 
 
 #floppy-dialog {
   position: fixed;
   border: 2px solid var(--accent-color);
-  width: 353px;
-  height: 191px;
+  max-width: 353px;
   background-color: var(--background-color);
-  z-index: 100;
   justify-content: center;
   align-items: center;
+  padding: 30px;
+}
+
+.floppy-dialog__content {
   display: flex;
   flex-direction: column;
-  padding: 30px;
   gap: 30px;
 }
 
@@ -348,6 +381,16 @@
   line-height: 21px;
   text-align: left;
   color: var(--accent-color);
+  display: flex;
+  gap: 20px;
+  text-transform: uppercase;
+}
+
+.floppy-dialog__header svg {
+  flex-shrink: 0;
+  width: 39px;
+  height: 39px;
+  align-self: center;
 }
 
 .floppy-dialog__button {
@@ -357,7 +400,6 @@
   font-family: var(--font-press-start);
   font-size: 14px;
   font-weight: 400px;
-  width: 130px;
   height: 38px;
   color: var(--accent-color);
 }
@@ -368,4 +410,25 @@ dialog::backdrop {
 #floppy {
   mix-blend-mode: difference;
   color: var(--button-text-color, rgba(255, 255, 255, 1));
+}
+
+@media (width <= 375px) {
+
+  .header {
+    margin-top: 100px;
+  }
+
+  .header__title-html {
+    font-size: 49px;
+    line-height: 49px;
+  }
+  
+  .header__title {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .footer__button {
+    flex-direction: column;
+  }
 }
