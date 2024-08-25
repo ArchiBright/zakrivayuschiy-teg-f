@@ -95,15 +95,6 @@
   animation: arrow 0.5s ease-in-out infinite alternate;
 }
 
-@keyframes arrow {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(4px);
-  }
-}
-
 .theme-menu__button:focus {
   outline: none;
   opacity: 0.6;
@@ -239,20 +230,6 @@
   fill: var(--main-body-color);
 }
 
-
-
-@keyframes heart-scale {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 .heart {
   animation: none;
   transform-origin: center;
@@ -260,18 +237,6 @@
 
 .like-icon.is-liked .heart {
   animation: heart-scale 0.3s ease-in 0.1s forwards;
-}
-
-@keyframes sparks-flash {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 .like-icon.is-liked .sparks {
