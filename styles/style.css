@@ -167,13 +167,12 @@
   text-shadow: -1px -1px 0 var(--label-border-color), 1px -1px 0 var(--label-border-color), -1px 1px 0 var(--label-border-color), 1px 1px 0 var(--label-border-color);
 }
 
-/* @supports ((text-stroke: 1px var(--label-border-color)) or (-webkit-text-stroke: 1px var(--label-border-color))) {
+@supports((text-stroke: 1px var(--label-border-color)) or (-webkit-text-stroke: 1px var(--label-border-color))) {
   .card-label {
       -webkit-text-stroke: 1px var(--label-border-color);
-      text-stroke: 1px var(--label-border-color);
-      text-shadow: none;
-    }
-} */
+      text-shadow: none;
+  }
+} 
 
 .card__text {
   margin: 0 25px;
