@@ -27,7 +27,6 @@
   display: flex;
   flex-direction: column;
   background-image: var(--background-image);
-  background-size: cover;
 }
 
 
@@ -121,11 +120,6 @@
 .theme-menu__button:disabled {
   pointer-events: none;
   opacity: 0.6;
-}
-
-#floppy {
-  mix-blend-mode: difference;
-  color: var(--button-text-color, rgba(255, 255, 255, 1));
 }
 
 .card {
@@ -334,10 +328,9 @@
 
 .card__like-button:focus {
   outline: none;
-  transition: box-shadow 0.3s ease;  
+  transition: box-shadow 0.3s ease;
   box-shadow: 2px 2px 0 var(--accent-color);
 }
-
 
 .footer {
   display: flex;
