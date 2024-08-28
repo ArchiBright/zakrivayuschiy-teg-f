@@ -149,6 +149,38 @@
   margin-bottom: 25px;
 }
 
+.brightness {
+  filter: brightness(120%);
+}
+
+.contrast {
+  filter: contrast(115%);
+}
+
+.blur {
+  filter: blur(0.04rem);
+}
+
+.opacity {
+  filter: opacity(0.8);
+}
+
+.grayscale {
+  filter: grayscale(60%);
+}
+
+.saturate {
+  filter: saturate(0.5);
+}
+
+.sepia {
+  filter: sepia(0.9);
+}
+
+.contrast-blur {
+  filter:contrast(115%) blur(0.02rem);
+}
+
 .card-label {
   position: absolute;
   font-size: 14px;
