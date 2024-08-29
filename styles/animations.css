@@ -44,15 +44,53 @@
   }
 
 
+  .card__icon-button {
+    background-color: transparent;
+    border: 2px solid transparent;
+    height: 38px;
+    transition: border-color 0.3s ease;
+  }
+
+  .card__icon-button:focus {
+    outline: none;
+  }
+
+  .card__icon-button:focus-visible {
+    border-color: var(--accent-color);
+  }
+
+
   .like-icon {
     display: flex;
     justify-self: center;
     align-self: flex-end;
-    margin: 0 12px;
     border: 2px solid transparent;
     transition: border 0.3s ease;
   }
-  
+
+.like-icon .core,
+.like-icon .main-body {
+  fill: none; 
+  transition: fill 0.3s linear;
+}
+
+.like-icon:hover .core {
+  fill: var(--accent-color); 
+}
+
+.like-icon:hover .main-body {
+  fill: var(--accent-color); 
+  transition-delay: 0.05s; 
+}
+
+.like-icon:not(:hover) .core {
+  transition-delay: 0.03s;
+}
+
+.like-icon:not(:hover) .main-body {
+  fill: none;
+}
+
   .like-icon:focus {
     outline: none;
   }
@@ -66,13 +104,9 @@
   }
   
   .like-icon .main-body {
-    transition: fill 0.5s linear 0.05s;
+    transition: fill 0.3s linear 0.06s;
   }
   
-  .like-icon:hover .core,
-  .like-icon:hover .main-body {
-    fill: var(--accent-color);
-  }
   
   .like-icon:active .core,
   .like-icon:active .main-body {
@@ -117,4 +151,53 @@
     justify-self: center;
     align-self: flex-end;
     margin: 0 25px 25px;
+  }
+
+  .card__like-button {
+    position: relative;
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+    font-family: var(--font-press-start);
+    font-size: 14px;
+    font-weight: 400;
+    width: 130px;
+    height: 38px;
+  }
+  
+  .card__like-button:hover {
+    cursor: pointer;
+  }
+  
+  .button__text {
+    position: relative;
+    z-index: 1;
+    color: var(--text-color);
+    mix-blend-mode: difference;
+  }
+  
+  .card__like-button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .button-no-focus:focus {
+    outline: none;
+  }
+  
+  .card__like-button:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .card__like-button:focus {
+    outline: none;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 2px 2px 0 var(--accent-color);
   }
