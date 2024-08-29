@@ -70,17 +70,17 @@
 
 .like-icon .core,
 .like-icon .main-body {
-  fill: none; 
+  fill: none;
   transition: fill 0.3s linear;
 }
 
 .like-icon:hover .core {
-  fill: var(--accent-color); 
+  fill: var(--accent-color);
 }
 
 .like-icon:hover .main-body {
-  fill: var(--accent-color); 
-  transition-delay: 0.05s; 
+  fill: var(--accent-color);
+  transition-delay: 0.05s;
 }
 
 .like-icon:not(:hover) .core {
