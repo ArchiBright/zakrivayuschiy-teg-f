@@ -104,8 +104,11 @@
   animation: arrow 0.5s ease-in-out infinite alternate;
 }
 
-.theme-menu__button:focus {
+button:focus {
   outline: none;
+}
+
+.theme-menu__button:focus {
   opacity: 0.6;
 }
 
@@ -224,14 +227,14 @@
 
 
 
-.footer {
+.save-button {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 100px;
 }
 
-.footer__button {
+.save-button__button {
   border: 2px solid var(--accent-color);
   font-family: var(--font-press-start);
   font-size: 14px;
@@ -287,6 +290,14 @@
   font-weight: 400px;
   height: 38px;
   color: var(--accent-color);
+}
+
+.floppy-dialog__button:hover {
+  cursor: pointer;
+}
+
+.save-button__button:hover {
+  cursor: pointer;
 }
 
 dialog::backdrop {

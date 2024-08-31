@@ -296,30 +296,30 @@
           </button>
         </div>
       </section>
-    </main>
-    <footer class="footer">
-      <dialog id="floppy-dialog">
-        <div class="floppy-dialog__content">
-        <h2 class="floppy-dialog__header">
-          <svg width="39" height="39" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <section class="save-button">
+        <dialog id="floppy-dialog">
+          <div class="floppy-dialog__content">
+          <p class="floppy-dialog__header">
+            <svg width="39" height="39" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use href="./svg/floppy.svg#floppy"></use>
+            </svg>Вставьте
+            дискету, чтобы продолжить</p>
+            <button type="button" class="floppy-dialog__button button-no-focus"
+            type="submit"
+            onclick="document.getElementById('floppy-dialog').close();">ok</button>
+          </div>
+        </dialog>
+        <button class="save-button__button button-no-focus" 
+        type="button" 
+        onclick="window['floppy-dialog'].showModal();"
+        aria-controls="floppy-dialog">
+          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <use href="./svg/floppy.svg#floppy"></use>
-          </svg>Вставьте
-          дискету, чтобы продолжить</h2>
-          <button type="button" class="floppy-dialog__button button-no-focus"
-          type="submit"
-          onclick="document.getElementById('floppy-dialog').close();">ok</button>
-        </div>
-      </dialog>
-      <button class="footer__button button-no-focus" 
-      type="button" 
-      onclick="window['floppy-dialog'].showModal();"
-      aria-controls="floppy-dialog">
-        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use href="./svg/floppy.svg#floppy"></use>
-        </svg>
-        Сохранить на память
-      </button>
-    </footer>
+          </svg>
+          Сохранить на память
+        </button>
+      </section>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
