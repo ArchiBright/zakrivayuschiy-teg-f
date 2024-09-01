@@ -139,7 +139,7 @@ button:focus {
   font-size: 18px;
   border-bottom: 2px solid var(--accent-color);
   line-height: 21.78px;
-  font-variation-settings: 'wght' var(--font-weight);
+  font-variation-settings: 'wght' var(--font-title-weight);
   padding: 3px;
 }
 
