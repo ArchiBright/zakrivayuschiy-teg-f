@@ -271,10 +271,6 @@ button:focus {
   box-shadow: 2px 2px 0 var(--accent-color);
 }
 
-.styled-button:focus {
-  outline: none;
-}
-
 .save-button {
   display: flex;
   flex-direction: column;
