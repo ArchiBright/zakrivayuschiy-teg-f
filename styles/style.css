@@ -149,6 +149,11 @@ button:focus {
   display: inline-block;
 }
 
+.image-label img {
+  width: 696px;
+  height: 696px;
+}
+
 .card__image {
   display: block;
   width: 100%;
@@ -347,6 +352,13 @@ button:focus {
   cursor: pointer;
 }
 
+.save-button__button svg {
+  position: relative;
+  z-index: 1;
+  color: var(--text-color);
+  mix-blend-mode: difference;
+}
+
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.75);
 }
@@ -356,6 +368,11 @@ dialog::backdrop {
 }
 
 @media (width <= 375px) {
+
+  .image-label img {
+    width: 371px;
+    height: 371px;
+  }
 
   .save-button__button {
     width: 306px;
